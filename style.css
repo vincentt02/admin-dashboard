@@ -14,7 +14,7 @@
     grid-template-rows: 200px 1fr;
 }
 
-.header {
+.header_container {
     background-color: blue;
     height: 100%;
     width: 100%;
@@ -36,6 +36,9 @@ div.profile_optionButtons {
     width: 100%;
     height: 100%;
     background-color: orange;
+
+    display: grid;
+    grid-template-columns: 65% 35%;
 }
 
 .sidebar {
@@ -102,15 +105,10 @@ ul.misc {
     margin-top: 25px;
 }
 
-
-
-
-
 .main-content {
     background-color: aqua;
     height: 100%;
     width: 100%;
- 
     grid-column: 2;
 }
 
@@ -172,3 +170,55 @@ div.profile {
     font-size: 1.3rem;
     font-weight: 600;
 }
+
+div.userShowcase {
+    width: 80%;
+    height: 100%;
+    align-self: center;
+    justify-self: center;
+
+    display:grid;
+    grid-template-columns: 80px 1fr;
+    gap: 25px;
+    align-items: center;
+   
+}
+
+
+div.profilepictureBig img {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+}
+
+.greetingMessage, .userName {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.userName {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.creationButtons {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.newButton, .uploadButton, .shareButton {
+    width: 60%;
+    height: 40%;
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    background-color: hsl(197, 71%, 73%);
+    border: none;
+    border-radius: 30px;
+}
+
